@@ -68,11 +68,21 @@ CI runs the same set: `.github/workflows/ci.yml`.
    git push origin vX.Y.Z
    ```
 
-Repository settings:
+4. Once the Release workflow is green, publish the released tarball and the tagged crate:
 
-- Immutable releases enabled.
-- crates.io: environment `crates-io`, trusted publisher for `release.yml` and `crates-io`. The first version is published by hand: `cargo publish -p unseen-core --locked`.
-- npmjs.com: environment `npm`, trusted publisher for `release.yml` and `npm`. The first version is published by hand: `pnpm publish unseen-vX.Y.Z-npm.tgz --access public`.
+   ```bash
+   gh release download vX.Y.Z --repo meritt/unseen.rs --pattern unseen-vX.Y.Z-npm.tgz --dir /tmp/unseen-npm
+   ```
+
+   ```bash
+   pnpm publish /tmp/unseen-npm/unseen-vX.Y.Z-npm.tgz --access public
+   ```
+
+   ```bash
+   git checkout vX.Y.Z && cargo publish -p unseen-core --locked
+   ```
+
+Repository settings: immutable releases enabled.
 
 Recovery:
 
@@ -80,5 +90,5 @@ Recovery:
 |---|---|
 | Identity, Gates, Build | rerun; for a code fix delete the tag (`git push origin :refs/tags/vX.Y.Z`), fix on `main`, tag again |
 | Draft, Readback, Publish | `gh release delete vX.Y.Z --repo meritt/unseen.rs --yes`, rerun |
-| Immutability, Ship, Crates | rerun the failed job |
+| Immutability | rerun the failed job |
 | Published release is wrong | release the next patch version |
