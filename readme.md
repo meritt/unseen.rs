@@ -57,7 +57,7 @@ let report = try Unseen.sanitizeReport(text)        // report.edits: ranges over
 
 ## Автор
 
-[Алексей Симоненко](https://github.com/meritt)
+[Алексей Симоненко](https://simonenko.xyz)
 
 ## Лицензия
 
