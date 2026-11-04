@@ -1,0 +1,1541 @@
+{
+  "format": 1,
+  "unicode_version": "17.0.0",
+  "unicode_tables_sha256": "5b993c2db384a20722df72845ec2b77191186afbd9af7ffc688170dae9d7166f",
+  "max_input_bytes": 104857600,
+  "max_work": 1677721600,
+  "max_normalize_work": 3355443200,
+  "scalars_sha256": "b9ed26a9d4be55e3b804dcfe8464255d82cfe84fcbd13bcaf3120124f6188eb6",
+  "random": {
+    "seed": "0x5eed7e47c0a90001",
+    "cases": 20000,
+    "max_tokens": 24,
+    "block_size": 1000,
+    "alphabet": [
+      "61",
+      "5a",
+      "37",
+      "23",
+      "2a",
+      "20",
+      "09",
+      "0a",
+      "0d",
+      "0b",
+      "0c",
+      "c2a0",
+      "c285",
+      "00",
+      "01",
+      "7f",
+      "c280",
+      "ff",
+      "c0",
+      "e280",
+      "eda080",
+      "efbbbf",
+      "e2808b",
+      "e2808c",
+      "e2808d",
+      "e281a0",
+      "c2ad",
+      "e2808e",
+      "e280ae",
+      "e281a6",
+      "efb88e",
+      "efb88f",
+      "efb880",
+      "f3a08480",
+      "e1a08b",
+      "f3a081a7",
+      "f3a081a2",
+      "f3a081bf",
+      "e283a3",
+      "f09f87b7",
+      "f09f87ba",
+      "f09f8fbb",
+      "f09f8fbf",
+      "f09f91a9",
+      "f09f91a8",
+      "f09f91a7",
+      "e29da4",
+      "f09f8fb4",
+      "e298ba",
+      "c2a9",
+      "f09f918d",
+      "cc81",
+      "cc88",
+      "e0a4be",
+      "e0a58d",
+      "e0a495",
+      "d0b6",
+      "d081",
+      "e4b8ad",
+      "d8a8",
+      "d7a9",
+      "e18480",
+      "e185a1",
+      "ee8080",
+      "cdb8",
+      "efbfbe",
+      "f48fbfbf",
+      "efbfbd",
+      "d0b0",
+      "d0be",
+      "cebf",
+      "d38f",
+      "e18eaa",
+      "6f",
+      "6c",
+      "2e",
+      "2e636f6d",
+      "3a2f2f",
+      "40",
+      "2d",
+      "e280a8",
+      "e38080"
+    ],
+    "blocks_sha256": [
+      "81fd147a5680444a18ca27e47bd004de45a522854d2d378fd47be78b374d1478",
+      "390d6d5f110b366112c7467ca2542ca57863f4c4692279a77f89c6f20b4dcc5c",
+      "3c4509047efc3cb677ac73fcb07144ababea21b66421defb323f4f790736c383",
+      "cabde3936f5a010f8844b2b3b22277a3f8306ceabde2d1a1c4dc0c8acae04d1c",
+      "36d15a9a3e468c65fe3cfaafa8e2ca2db37d28f71d8b832d130d5cf860577b16",
+      "4a92296c457a3e6ec50aca0f9c4a2a95ecedc2e58611c295dabe9a583153b5ba",
+      "06501527ca67b80857be9685692d2b5f8a2181a960099ddea6f4945397d1b7df",
+      "39d7677900f4b7e0fabee89e13801fda692fb8579e649d2b666c1485bc5716b5",
+      "18793fb108bf8c07fb0eb78c17d67998f5cef438f0732596e2a3426041ef66f8",
+      "8e79a8b7086a5e4e43d7415f8d3af4641dad1e7c9ac72257f7874865f9d5f767",
+      "02accc6a40a00064e54747c27175339b2466884f59a3b0c14e55394aee38553b",
+      "74f077ba570a33152b21f73ea9908b04fbf10a04a9e2cdc85a6262c706762b6d",
+      "8f7b67a78fde435b2d24079848e54d02afb0644d00806a4aa6482e2dd058ee17",
+      "8b77197f95684f0ee1562bb323cf937f2e8caed786a93429e5dad02061fe800a",
+      "142e326fadf8fcd5f28e770b00598d21b0bcdf323caf7b76588fbcfaa9746452",
+      "03f3edbb2fd6e430569954348f19594acdb61fdde1f2f6dee6c068ac4b6231d8",
+      "a7c2b196c691f0d71dbdb222cc637fff3c7606d370747bb42307ca9019da8b09",
+      "b68ed1bd84b46a1b4e2b9eacd89807e9c5044a05e7a7742ea99759df9765a41c",
+      "96091b5496a77469a470a59790a669e0de09a3f4e03dfe846a49a84f58ad88c3",
+      "c9cbba6d5a392e31c0687c64847739c82b124461379ffe3198588de84921ae9d"
+    ]
+  },
+  "cases": [
+    {
+      "name": "empty",
+      "input": [
+        {
+          "hex": "",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "work": 0,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "ascii prose",
+      "input": [
+        {
+          "hex": "54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 44,
+          "sha256": "ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c",
+          "hex": "54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e"
+        },
+        "work": 88,
+        "verify_work": 88
+      }
+    },
+    {
+      "name": "russian prose",
+      "input": [
+        {
+          "hex": "d0a1d18ad0b5d188d18c20d0b5d189d19120d18dd182d0b8d18520d0bcd18fd0b3d0bad0b8d18520d184d180d0b0d0bdd186d183d0b7d181d0bad0b8d18520d0b1d183d0bbd0bed0ba2c20d0b4d0b020d0b2d18bd0bfd0b5d0b920d187d0b0d18e2e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 98,
+          "sha256": "655e213d8a5dd1e115d8c4034992c98f37a8ea8501f453c31adeba709aca2aac",
+          "hex": "d0a1d18ad0b5d188d18c20d0b5d189d19120d18dd182d0b8d18520d0bcd18fd0b3d0bad0b8d18520d184d180d0b0d0bdd186d183d0b7d181d0bad0b8d18520d0b1d183d0bbd0bed0ba2c20d0b4d0b020d0b2d18bd0bfd0b5d0b920d187d0b0d18e2e"
+        },
+        "work": 820,
+        "verify_work": 820
+      }
+    },
+    {
+      "name": "typography",
+      "input": [
+        {
+          "hex": "c2abd081d0bbd0bad0b82dd0bfd0b0d0bbd0bad0b8c2bb20e2809420d18dd182d0be2031c2a0303030e280afe282bd2c20d181d182d1802e20352c20d181d1802e20e284962037e280a6",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 74,
+          "sha256": "5b60bac17b79a600f60bd41552536ce416f7ff15cc745b3147099fc083373e51",
+          "hex": "c2abd081d0bbd0bad0b82dd0bfd0b0d0bbd0bad0b8c2bb20e2809420d18dd182d0be2031c2a0303030e280afe282bd2c20d181d182d1802e20352c20d181d1802e20e284962037e280a6"
+        },
+        "work": 691,
+        "verify_work": 691
+      }
+    },
+    {
+      "name": "layout whitespace",
+      "input": [
+        {
+          "hex": "6c696e65206f6e650a6c696e652074776f0d0a636f6c756d6e09636f6c756d6e0b76740c70616765c2856e656ce280a86c73e280a97073",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 49,
+          "sha256": "68b5ffc851a89c20cf0c6167dbf947f0296b4d6f3669539394c5f5ba26ad2514",
+          "hex": "6c696e65206f6e650a6c696e652074776f0a636f6c756d6e09636f6c756d6e0a76740c706167650a6e656c0a6c730a7073"
+        },
+        "work": 166,
+        "verify_work": 98
+      }
+    },
+    {
+      "name": "escapes stay literal",
+      "input": [
+        {
+          "hex": "5c753230304220262378323030443b20254532253830253844205c783030",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 30,
+          "sha256": "f606639c529c83f4db55307ab4d11cdab2c569d331a7685a2d2207d9965bf5b9",
+          "hex": "5c753230304220262378323030443b20254532253830253844205c783030"
+        },
+        "work": 241,
+        "verify_work": 241
+      }
+    },
+    {
+      "name": "replacement character kept",
+      "input": [
+        {
+          "hex": "61efbfbd62",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 5,
+          "sha256": "05087813392efc16fe8ff448920c6328e53af865df39419436659d9ffda90f7b",
+          "hex": "61efbfbd62"
+        },
+        "work": 48,
+        "verify_work": 48
+      }
+    },
+    {
+      "name": "leading bom",
+      "input": [
+        {
+          "hex": "efbbbf68656c6c6f",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 5,
+          "sha256": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+          "hex": "68656c6c6f"
+        },
+        "work": 10,
+        "verify_work": 10
+      }
+    },
+    {
+      "name": "bom only",
+      "input": [
+        {
+          "hex": "efbbbf",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "work": 0,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "double leading bom",
+      "input": [
+        {
+          "hex": "efbbbfefbbbf78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 1,
+          "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+          "hex": "78"
+        },
+        "work": 16,
+        "verify_work": 2
+      }
+    },
+    {
+      "name": "inner bom",
+      "input": [
+        {
+          "hex": "61efbbbf62",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 2,
+          "sha256": "fb8e20fc2e4c3f248c60c39bd652f3c1347298bb977b8b4d5903b85055620603",
+          "hex": "6162"
+        },
+        "work": 18,
+        "verify_work": 4
+      }
+    },
+    {
+      "name": "zero width space",
+      "input": [
+        {
+          "hex": "d0a1d18ad0b5d188d18ce2808bd0b5d189d191",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 16,
+          "sha256": "d57bc757343d2983c452bb186fb6ea7dfa986669975cc5edb927758978d5607b",
+          "hex": "d0a1d18ad0b5d188d18cd0b5d189d191"
+        },
+        "work": 158,
+        "verify_work": 144
+      }
+    },
+    {
+      "name": "joiners outside emoji",
+      "input": [
+        {
+          "hex": "61e2808c62e2808d63e281a064",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 4,
+          "sha256": "88d4266fd4e6338d13b845fcf289579d209c897823b9217da3e161936f031589",
+          "hex": "61626364"
+        },
+        "work": 50,
+        "verify_work": 8
+      }
+    },
+    {
+      "name": "soft hyphen",
+      "input": [
+        {
+          "hex": "d0bfd0bec2add0bcd0bed189d18c",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 12,
+          "sha256": "e70d45bf0137747467a6fc02d2901c046922944aaae86a58f45ef674e73b0b45",
+          "hex": "d0bfd0bed0bcd0bed189d18c"
+        },
+        "work": 122,
+        "verify_work": 108
+      }
+    },
+    {
+      "name": "bidi controls",
+      "input": [
+        {
+          "hex": "61e2808e62e2808f63e280aa64e280ae65e281a666e281a967d89c68",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 8,
+          "sha256": "9c56cc51b374c3ba189210d5b6d4bf57790d351c96c47c02190ecf1e430635ab",
+          "hex": "6162636465666768"
+        },
+        "work": 114,
+        "verify_work": 16
+      }
+    },
+    {
+      "name": "tag characters",
+      "input": [
+        {
+          "hex": "78f3a08181f3a081a2f3a081bf79",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 2,
+          "sha256": "769a4e6d0003189c7e96c5d9b7e810a0d11c3a12832527ec94b0f86d277f51ca",
+          "hex": "7879"
+        },
+        "work": 46,
+        "verify_work": 4
+      }
+    },
+    {
+      "name": "private use",
+      "input": [
+        {
+          "hex": "61ee808062f3b0808063f480808064",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 4,
+          "sha256": "88d4266fd4e6338d13b845fcf289579d209c897823b9217da3e161936f031589",
+          "hex": "61626364"
+        },
+        "work": 50,
+        "verify_work": 8
+      }
+    },
+    {
+      "name": "unassigned",
+      "input": [
+        {
+          "hex": "61cdb862f09fbfbd63",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 3,
+          "sha256": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+          "hex": "616263"
+        },
+        "work": 36,
+        "verify_work": 6
+      }
+    },
+    {
+      "name": "noncharacters",
+      "input": [
+        {
+          "hex": "61efb79062efbfbe63f48fbfbf64",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 4,
+          "sha256": "88d4266fd4e6338d13b845fcf289579d209c897823b9217da3e161936f031589",
+          "hex": "61626364"
+        },
+        "work": 50,
+        "verify_work": 8
+      }
+    },
+    {
+      "name": "ideographic variation removed",
+      "input": [
+        {
+          "hex": "e8919bf3a08480",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 3,
+          "sha256": "380f872b0ed46a8a8e1cb43f09c9d9b0cc40a2d83e8c4f283133ee9900600c76",
+          "hex": "e8919b"
+        },
+        "work": 56,
+        "verify_work": 42
+      }
+    },
+    {
+      "name": "mongolian selector removed",
+      "input": [
+        {
+          "hex": "e1a0a0e1a08be1a08f",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 3,
+          "sha256": "8c79ad020045b80887d0123951572145c85916bc19ffcb2f62b085d6a626ebec",
+          "hex": "e1a0a0"
+        },
+        "work": 70,
+        "verify_work": 42
+      }
+    },
+    {
+      "name": "text and emoji presentation kept",
+      "input": [
+        {
+          "hex": "e298baefb88e20e298baefb88f20e29da4efb88f",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 20,
+          "sha256": "9aedf461622d4bfa29cb4bb1931fa9ac0fbfdcde20a21859e9a24cd8b34455d7",
+          "hex": "e298baefb88e20e298baefb88f20e29da4efb88f"
+        },
+        "work": 312,
+        "verify_work": 312
+      }
+    },
+    {
+      "name": "selector after digit removed",
+      "input": [
+        {
+          "hex": "31efb88f32efb88e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 2,
+          "sha256": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
+          "hex": "3132"
+        },
+        "work": 119,
+        "verify_work": 31
+      }
+    },
+    {
+      "name": "keycap sequence kept",
+      "input": [
+        {
+          "hex": "23efb88fe283a32031efb88fe283a3202aefb88fe283a3",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 23,
+          "sha256": "2b11ac9b5eae818e344b09539b03f442c4e793ef602afd130ea855d1cfed5d7b",
+          "hex": "23efb88fe283a32031efb88fe283a3202aefb88fe283a3"
+        },
+        "work": 322,
+        "verify_work": 322
+      }
+    },
+    {
+      "name": "bare keycap mark",
+      "input": [
+        {
+          "hex": "31e283a3",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 4,
+          "sha256": "6ae0a6793ffae0590fdd0838c6199652d8b44410d1926d38818212d3ae6dd19e",
+          "hex": "31e283a3"
+        },
+        "work": 99,
+        "verify_work": 99
+      }
+    },
+    {
+      "name": "flag kept",
+      "input": [
+        {
+          "hex": "f09f87b7f09f87baf09f87baf09f87b8",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 16,
+          "sha256": "a183892f39d560f8d3fe8ad3bef0ef6b4af1ea302308c11ebe8a0bd599bc48fb",
+          "hex": "f09f87b7f09f87baf09f87baf09f87b8"
+        },
+        "work": 201,
+        "verify_work": 201
+      }
+    },
+    {
+      "name": "lone regional indicator",
+      "input": [
+        {
+          "hex": "f09f87b72078",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 6,
+          "sha256": "b4f96f8f3fd6e0f4a2600720c8e255f917c2c5eadff52503ec66381386057e25",
+          "hex": "f09f87b72078"
+        },
+        "work": 47,
+        "verify_work": 47
+      }
+    },
+    {
+      "name": "modifier sequence kept",
+      "input": [
+        {
+          "hex": "f09f918df09f8fbd20f09f8fbd",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 13,
+          "sha256": "cb2a70d396294ce36b41395738f200e28ba4faded9cd3b20b3bde0e1a806dd4e",
+          "hex": "f09f918df09f8fbd20f09f8fbd"
+        },
+        "work": 146,
+        "verify_work": 146
+      }
+    },
+    {
+      "name": "zwj family kept",
+      "input": [
+        {
+          "hex": "f09f91a9e2808df09f91a9e2808df09f91a7e2808df09f91a6",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 25,
+          "sha256": "efcb81a853e87f8c2e689cbe757df559119496737e809af4fe4c5574c9ca4c85",
+          "hex": "f09f91a9e2808df09f91a9e2808df09f91a7e2808df09f91a6"
+        },
+        "work": 368,
+        "verify_work": 368
+      }
+    },
+    {
+      "name": "zwj outside registry removed",
+      "input": [
+        {
+          "hex": "f09f91a9e2808df09f8d8e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 8,
+          "sha256": "160703fbc3254ea30b1e3a044523da13f8f3fb611cb0437d7ad66f854184b82a",
+          "hex": "f09f91a9f09f8d8e"
+        },
+        "work": 173,
+        "verify_work": 86
+      }
+    },
+    {
+      "name": "zwj technologist",
+      "input": [
+        {
+          "hex": "f09f91a9e2808df09f92bb",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 11,
+          "sha256": "427274538f1f24ef137872891551ffb4263f6edd90c80c533534578e8a5a9893",
+          "hex": "f09f91a9e2808df09f92bb"
+        },
+        "work": 172,
+        "verify_work": 172
+      }
+    },
+    {
+      "name": "tag sequence flag kept",
+      "input": [
+        {
+          "hex": "f09f8fb4f3a081a7f3a081a2f3a081b3f3a081a3f3a081b4f3a081bf",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 28,
+          "sha256": "c94781ea4b53699242c238111fff670e026fe40bc55fdaa4a5c5dd72f8f55ad2",
+          "hex": "f09f8fb4f3a081a7f3a081a2f3a081b3f3a081a3f3a081b4f3a081bf"
+        },
+        "work": 308,
+        "verify_work": 308
+      }
+    },
+    {
+      "name": "broken tag sequence",
+      "input": [
+        {
+          "hex": "f09f8fb4f3a081a7f3a081a278",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 5,
+          "sha256": "0bb5a77afd5a8af49ef2b39980a42b0a2058d8c363a3e4d91e7c5c41f764b050",
+          "hex": "f09f8fb478"
+        },
+        "work": 133,
+        "verify_work": 47
+      }
+    },
+    {
+      "name": "combining marks on base",
+      "input": [
+        {
+          "hex": "d0b8cc81d0b7d0b1d180d0b0d0bdd0bdd0bed0b52c2065cc816c65cc8076652c206e61cc886368737465",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 42,
+          "sha256": "fa878be7903487e00a9e825f7f93ba7c035d1ebd7b90271478e064be1e4ce5c8",
+          "hex": "d0b8cc81d0b7d0b1d180d0b0d0bdd0bdd0bed0b52c2065cc816c65cc8076652c206e61cc886368737465"
+        },
+        "work": 392,
+        "verify_work": 392
+      }
+    },
+    {
+      "name": "detached combining mark",
+      "input": [
+        {
+          "hex": "cc816120cc81",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 1,
+          "sha256": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+          "hex": "61"
+        },
+        "work": 74,
+        "verify_work": 2
+      }
+    },
+    {
+      "name": "32 extenders kept",
+      "input": [
+        {
+          "hex": "41",
+          "repeat": 1
+        },
+        {
+          "hex": "cc81",
+          "repeat": 32
+        },
+        {
+          "hex": "42",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 66,
+          "sha256": "a710274c39c99c11e0cbc96bfb7715b6c4f8bf39dea2518db6e7045a52b387a9",
+          "hex": "41cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc81cc8142"
+        },
+        "work": 610,
+        "verify_work": 610
+      }
+    },
+    {
+      "name": "33 extenders reject",
+      "input": [
+        {
+          "hex": "41",
+          "repeat": 1
+        },
+        {
+          "hex": "cc81",
+          "repeat": 33
+        },
+        {
+          "hex": "42",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 493,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "detached 33 extenders removed",
+      "input": [
+        {
+          "hex": "cc81",
+          "repeat": 33
+        },
+        {
+          "hex": "42",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 1,
+          "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c",
+          "hex": "42"
+        },
+        "work": 492,
+        "verify_work": 2
+      }
+    },
+    {
+      "name": "arabic zwnj removed",
+      "input": [
+        {
+          "hex": "d985db8ce2808cd8aed988d8a7d987d985",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 14,
+          "sha256": "e5d7172ca78e5c4e64ba641091a78f5bfed36781efd949cff7b0f021ae36dc3d",
+          "hex": "d985db8cd8aed988d8a7d987d985"
+        },
+        "work": 140,
+        "verify_work": 126
+      }
+    },
+    {
+      "name": "devanagari conjunct",
+      "input": [
+        {
+          "hex": "e0a495e0a58de2808de0a4b720e0a495e0a4be",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 16,
+          "sha256": "0cb14dc5272f589fae037f911c6757f7231b353cc273bda0c73e3eff8e312ebc",
+          "hex": "e0a495e0a58de0a4b720e0a495e0a4be"
+        },
+        "work": 148,
+        "verify_work": 134
+      }
+    },
+    {
+      "name": "hangul jamo",
+      "input": [
+        {
+          "hex": "e18480e185a1e186a8",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 9,
+          "sha256": "e2f7ec2baabd8451addae759c813d5c0d9bc9114e82f81ccfb504cec557b13a6",
+          "hex": "e18480e185a1e186a8"
+        },
+        "work": 126,
+        "verify_work": 126
+      }
+    },
+    {
+      "name": "nul",
+      "input": [
+        {
+          "hex": "610062",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 17,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "c0 control",
+      "input": [
+        {
+          "hex": "610162",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 17,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "escape control",
+      "input": [
+        {
+          "hex": "611b62",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 17,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "delete",
+      "input": [
+        {
+          "hex": "617f62",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 17,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "c1 control",
+      "input": [
+        {
+          "hex": "61c28062",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 17,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "lone continuation",
+      "input": [
+        {
+          "hex": "618062",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 4,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "overlong slash",
+      "input": [
+        {
+          "hex": "61c0af62",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 5,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "encoded surrogate",
+      "input": [
+        {
+          "hex": "61eda08062",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 6,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "beyond unicode",
+      "input": [
+        {
+          "hex": "61f490808062",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 7,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "truncated sequence",
+      "input": [
+        {
+          "hex": "61e282",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 4,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "ff byte",
+      "input": [
+        {
+          "hex": "ff61",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 2,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "invalid after removable",
+      "input": [
+        {
+          "hex": "e2808bff",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 15,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "cyrillic look-alike in latin word",
+      "input": [
+        {
+          "hex": "d0b070706c652067cebf6f676c6520d09050504c45",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 18,
+          "sha256": "fecf67853dd2d41efcc438d50d02bdf8a017be5de9ee5dd177d396cc3bd39897",
+          "hex": "6170706c6520676f6f676c65204150504c45"
+        },
+        "work": 143,
+        "verify_work": 36
+      }
+    },
+    {
+      "name": "latin look-alike in cyrillic word",
+      "input": [
+        {
+          "hex": "d0bf6fd0bbd0b520d0bad0bed1822057696b6970656469d18f",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 26,
+          "sha256": "a08cd087fe6f90c3aa087eca3088999d6454c4d9cbd8bea6275c0c1ca7e0d58d",
+          "hex": "d0bfd0bed0bbd0b520d0bad0bed1822057696b6970656469d18f"
+        },
+        "work": 192,
+        "verify_work": 191
+      }
+    },
+    {
+      "name": "cherokee look-alike in latin word",
+      "input": [
+        {
+          "hex": "e18eaa42e18ea220e18eaae18eaa41",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 19,
+          "sha256": "9fd58a5adf2492c97823c9238eed057d596a1266994e97bf94b3ffb7e5ec9b39",
+          "hex": "e18eaae18fb4e18ea220e18eaae18eaae18eaa"
+        },
+        "work": 252,
+        "verify_work": 254
+      }
+    },
+    {
+      "name": "armenian look-alike in latin word",
+      "input": [
+        {
+          "hex": "67d685d685676c65",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 6,
+          "sha256": "bbdefa2950f49882f295b1285d4fa9dec45fc4144bfb07ee6acc68762d12c2e3",
+          "hex": "676f6f676c65"
+        },
+        "work": 74,
+        "verify_work": 12
+      }
+    },
+    {
+      "name": "removed invisible inside mixed word",
+      "input": [
+        {
+          "hex": "d0b0e2808b70706c65",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 5,
+          "sha256": "3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b",
+          "hex": "6170706c65"
+        },
+        "work": 59,
+        "verify_work": 10
+      }
+    },
+    {
+      "name": "ties stay",
+      "input": [
+        {
+          "hex": "5b612d7ad0b02dd18f5d20ce9479203d20cf8072c2b2205bd0902dd0af412d5a5d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 33,
+          "sha256": "6fbc369f75f09ef487e9acef7b7b74b99b9fcb364c6f1114531fdd8805e03fe4",
+          "hex": "5b612d7ad0b02dd18f5d20ce9479203d20cf8072c2b2205bd0902dd0af412d5a5d"
+        },
+        "work": 178,
+        "verify_work": 178
+      }
+    },
+    {
+      "name": "words split by hyphen and digit",
+      "input": [
+        {
+          "hex": "49542dd0bed182d0b4d0b5d0bb206131d0b0206950686f6e65",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 25,
+          "sha256": "3b2fbdabc6a7c45214033f0f2a6b3ad6b8b84f613c49517cd25eddf3c17d10fa",
+          "hex": "49542dd0bed182d0b4d0b5d0bb206131d0b0206950686f6e65"
+        },
+        "work": 153,
+        "verify_work": 153
+      }
+    },
+    {
+      "name": "styled letters stay",
+      "input": [
+        {
+          "hex": "d0bad0bed182e1b48b20efbd81d0b1d0b220e4b8ade4b8ade4b8ad61d0b0",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 30,
+          "sha256": "4c95d0a04c5854817cd9af9516baa77fc7dcf83c083790ee89d02ca2ca555a02",
+          "hex": "d0bad0bed182e1b48b20efbd81d0b1d0b220e4b8ade4b8ade4b8ad61d0b0"
+        },
+        "work": 381,
+        "verify_work": 381
+      }
+    },
+    {
+      "name": "disguised host",
+      "input": [
+        {
+          "hex": "68747470733a2f2fd180d0b0d183d180d0b0d38f2e636f6d2f6c6f67696e207573657240d180d0b0d183d180d0b06c2e636f6d20d181d0bed1812e636f6d3a34343320d181d0bed1812e636f6d2e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 61,
+          "sha256": "68b994805d73fdbcd11949e975bd697a9209b7f79c4837890b8706b0ff20c083",
+          "hex": "68747470733a2f2f70617970616c2e636f6d2f6c6f67696e20757365724070617970616c2e636f6d20636f632e636f6d3a34343320636f632e636f6d2e"
+        },
+        "work": 988,
+        "verify_work": 164
+      }
+    },
+    {
+      "name": "host under its own tld",
+      "input": [
+        {
+          "hex": "d0bfd180d0b8d0bcd0b5d1802ed180d18420d0bad0bed1822e636f6d20d181d0bed1812e786e2d2d70316169",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 41,
+          "sha256": "f0cdea3323469236961066eedaac62c4a308aa95e094080755b74d120e3d8076",
+          "hex": "d0bfd180d0b8d0bcd0b5d1802ed180d18420d0bad0bed1822e636f6d20636f632e786e2d2d70316169"
+        },
+        "work": 450,
+        "verify_work": 305
+      }
+    },
+    {
+      "name": "not a host",
+      "input": [
+        {
+          "hex": "d181d0bed1812e6320d181d0bed1812e636f6d3120d181d0bed1812e2e636f6d20d092d0bed18220d182d0b0d0ba2e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 47,
+          "sha256": "631d679d6aa44c0620111cb7be2c09d888b11e9050c90fe2eaecc1e1c146ce35",
+          "hex": "d181d0bed1812e6320d181d0bed1812e636f6d3120d181d0bed1812e2e636f6d20d092d0bed18220d182d0b0d0ba2e"
+        },
+        "work": 368,
+        "verify_work": 368
+      }
+    },
+    {
+      "name": "host anywhere in a token",
+      "input": [
+        {
+          "hex": "28d180d0b0d183d180d0b0d38f2e636f6d29205b785d2868747470733a2f2fd181d0bed1812e636f6d29203cd181d0bed1812e636f6d3e2b20d181d0bed1812e636f6d2f3f753dd180d0b0d183d180d0b0d38f2e6e6574",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 66,
+          "sha256": "492d3b8701798091b71ac5dc305679a2902ed48d681ec9ce16ba07b1d07cd812",
+          "hex": "2870617970616c2e636f6d29205b785d2868747470733a2f2f636f632e636f6d29203c636f632e636f6d3e2b20636f632e636f6d2f3f753d70617970616c2e6e6574"
+        },
+        "work": 1081,
+        "verify_work": 132
+      }
+    },
+    {
+      "name": "mixed host labels",
+      "input": [
+        {
+          "hex": "d180d0b0796c2e636f6d20d180d0b0d183d180ceb16c2e636f6d20d181d0bed1812ed181d0be6d20d180d0b0796c2ed180d184",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 39,
+          "sha256": "56e53f6be335ded624643f7d28f2e21763d08c0f3963c29c2af3a7577d2b5302",
+          "hex": "7061796c2e636f6d2070617970616c2e636f6d20636f632e636f6d20d180d0b0796c2ed180d184"
+        },
+        "work": 747,
+        "verify_work": 155
+      }
+    },
+    {
+      "name": "crlf and lone cr",
+      "input": [
+        {
+          "hex": "610d0a620d630d0d0a640d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 9,
+          "sha256": "9e1f9f6286fc3f0dc6d3f485c418a23cd289dc84569c32dc8a17e2b268129750",
+          "hex": "610a620a630a0a640a"
+        },
+        "work": 22,
+        "verify_work": 18
+      }
+    },
+    {
+      "name": "other line breaks",
+      "input": [
+        {
+          "hex": "610b62c28563e280a864e280a965",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 9,
+          "sha256": "dbbc47f2a90b02153a78630eb0341612800f530bd3ae6dda5504e60ffbc64018",
+          "hex": "610a620a630a640a65"
+        },
+        "work": 84,
+        "verify_work": 18
+      }
+    },
+    {
+      "name": "form feed kept",
+      "input": [
+        {
+          "hex": "70616765200c6e6578740c",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 10,
+          "sha256": "80c02a669e07b15610e25a3ed597482c94d52c3192b9545584208d97e859baa8",
+          "hex": "706167650c6e6578740c"
+        },
+        "work": 22,
+        "verify_work": 20
+      }
+    },
+    {
+      "name": "trailing whitespace",
+      "input": [
+        {
+          "hex": "6120090a62c2a0e280af0a63e3808020",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 5,
+          "sha256": "ea7fb08b7a2dc4619ffb7c7bb38d95a2047935fa165d71b12efd3852a2e6d0cc",
+          "hex": "610a620a63"
+        },
+        "work": 88,
+        "verify_work": 10
+      }
+    },
+    {
+      "name": "whitespace only",
+      "input": [
+        {
+          "hex": "2009c2a0",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "work": 20,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "removed invisible before line end",
+      "input": [
+        {
+          "hex": "6120e2808b0a620de2808b0a6320e2808b",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 5,
+          "sha256": "ea7fb08b7a2dc4619ffb7c7bb38d95a2047935fa165d71b12efd3852a2e6d0cc",
+          "hex": "610a620a63"
+        },
+        "work": 58,
+        "verify_work": 10
+      }
+    },
+    {
+      "name": "inner spaces stay",
+      "input": [
+        {
+          "hex": "202078202079c2a07a20e282bd",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 13,
+          "sha256": "753ead100cf1328d347168b86eb5d7dcf9eb92e9b50a1668d88ba4cf723c95cb",
+          "hex": "202078202079c2a07a20e282bd"
+        },
+        "work": 74,
+        "verify_work": 74
+      }
+    },
+    {
+      "name": "100 MiB ascii",
+      "slow": true,
+      "input": [
+        {
+          "hex": "61",
+          "repeat": 104857600
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "output": {
+          "len": 104857600,
+          "sha256": "cee41e98d0a6ad65cc0ec77a2ba50bf26d64dc9007f7f1c7d7df68b8b71291a6"
+        },
+        "work": 209715200,
+        "verify_work": 209715200
+      }
+    },
+    {
+      "name": "too large",
+      "slow": true,
+      "input": [
+        {
+          "hex": "61",
+          "repeat": 104857601
+        }
+      ],
+      "want": {
+        "result": "too_large",
+        "work": 0,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "normalized output too large",
+      "slow": true,
+      "input": [
+        {
+          "hex": "d0b1d0b26120",
+          "repeat": 17476266
+        }
+      ],
+      "want": {
+        "result": "too_large",
+        "work": 898779418,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "rewritten token too large",
+      "slow": true,
+      "input": [
+        {
+          "hex": "d0b1d0b261",
+          "repeat": 20971520
+        }
+      ],
+      "want": {
+        "result": "too_large",
+        "work": 1062557018,
+        "verify_work": 0
+      }
+    },
+    {
+      "name": "work budget exhausted",
+      "slow": true,
+      "input": [
+        {
+          "hex": "f09f91a9e2808d",
+          "repeat": 13481691
+        }
+      ],
+      "want": {
+        "result": "malformed",
+        "work": 1859799902,
+        "verify_work": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1149 @@
+{
+  "format": 1,
+  "random": {
+    "seed": "0x5eedf11ec0a90001",
+    "cases": 20000,
+    "max_tokens": 16,
+    "block_size": 1000,
+    "file_names": [
+      "a.txt",
+      "a.TXT",
+      "a.json",
+      "a.csv",
+      "a.md",
+      "a.yml",
+      "a.html",
+      "a.svg",
+      "a.pdf",
+      "a.png",
+      "a.gif",
+      "a.mp3",
+      "a.flac",
+      "a.mp4",
+      "a.opus",
+      "a.exe",
+      "noext",
+      ".txt",
+      "a.b/c",
+      "a.İNİ"
+    ],
+    "alphabet": [
+      "474946383961",
+      "255044462d",
+      "3c7376673e",
+      "203c7376672f3e",
+      "3c703e",
+      "664c6143",
+      "494433",
+      "04000000000000",
+      "52494646",
+      "57415645",
+      "57454250",
+      "4f676753",
+      "4f70757348656164",
+      "01766f72626973",
+      "fff1",
+      "fffb",
+      "ffd8ff",
+      "89504e470d0a1a0a",
+      "1a45dfa3",
+      "7765626d",
+      "2020202066747970",
+      "66747970",
+      "69736f6d",
+      "71742020",
+      "4d344120",
+      "68656963",
+      "6d696631",
+      "61766966",
+      "00000018",
+      "61",
+      "5a",
+      "20",
+      "0a",
+      "09",
+      "00",
+      "01",
+      "ff",
+      "efbbbf",
+      "e2808b",
+      "cc81",
+      "d0b6",
+      "f09f91a9",
+      "e2808d",
+      "efb88f",
+      "c2ad",
+      "ee8080",
+      "e280ae"
+    ],
+    "blocks_sha256": [
+      "1ca0b268bb5a1be4e826af0c673587471f7029eaba7f9d26bcbbd61d31007257",
+      "1960fa1a302a26658cf01cea4b89d4f2916cdc8877e6b9ba4b84aed60ec51c99",
+      "aa5710aa08a22315eb7aa949eb44dbf3748ef3013e84fee2200ff2bc4485fd39",
+      "a61fe15785379bac444dd08555f073e88ca6de33b6ebbbf486bb26934387c65b",
+      "6ac194947b50630ab171feba72730a5da4f3ae24aba3037970737fe448dbd8f0",
+      "7346a30b0efcfe8dc16bd064d116de6790d1fdcad3da29fe7853542667436e1a",
+      "d8391dd65cf4d47a8314b6778788428c01a0853f3fd732a6d3dce6e2f145a371",
+      "2b4b65888dbee3482c5fe1a865105116d5025837b1370ba9bd987ff380ca90d2",
+      "bdcdc81b43dd2d4b99b6f627949c97e09bd555fc24b62980aaccb6a7a3a88e7d",
+      "23c5c389e87cff3dcb7c3af9e293083b0fd6e5e0604ec0c711fbe66568795158",
+      "14556ddccb0f68c40f84d0871c267ea76270ebfa0dfe7b300acbd8761c95602f",
+      "d3a7d8049a35e73be5114443a83eb1aca79be17d5d6ed4e42b8a9490ec32b0e3",
+      "f8738d2cc857bcd9488dd0f4df2f53b3a28b4bb2cf846d9ac9ebe4d69d142cd9",
+      "b5f37511421b722bc65810103ec4d22fb94bb1e6c9c8d000f9baab3899b82907",
+      "882c724f2e70b9d5fce16ae2ba8d37a2509531c85484149d9b914816045de38c",
+      "a2c1a32dea5e41e24fe4d309871c849356fc79032ca64cf87dd4c61d91c33910",
+      "2493b66ec370cf9ab5aa421f4aa89f58e4c67d57bbd3c4eb559f4bd9f153c1ae",
+      "57ac31fb3cb93b6892783ab71bc76cd235ac05bfd9a2f2678246c3d60f7c28aa",
+      "3d62ca3849890ad8407c5566e2c2ba681835d918d52c8c3f9d3a5db3f7f22497",
+      "0792db583a51a7774e0f70d6c2f09bdafe474f15ffaf81323055ed883d8b4eb2"
+    ]
+  },
+  "cases": [
+    {
+      "name": "txt",
+      "file_name": "note.txt",
+      "input": [
+        {
+          "hex": "68656c6c6fe2808b20776f726c64",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 11,
+          "sha256": "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9",
+          "hex": "68656c6c6f20776f726c64"
+        }
+      }
+    },
+    {
+      "name": "ini",
+      "file_name": "a.ini",
+      "input": [
+        {
+          "hex": "5b735d0a6b3d76",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "ini",
+        "output": {
+          "len": 7,
+          "sha256": "4c33a24f8deb4b8486f4c97fd8d7246e43db6db27983f379ae9db143179fb6e4",
+          "hex": "5b735d0a6b3d76"
+        }
+      }
+    },
+    {
+      "name": "md",
+      "file_name": "a.md",
+      "input": [
+        {
+          "hex": "232054c2ad",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "md",
+        "output": {
+          "len": 3,
+          "sha256": "4321893dc18b145ad336300ff5929711a5a3836075522f016a319d8b3793304e",
+          "hex": "232054"
+        }
+      }
+    },
+    {
+      "name": "markdown",
+      "file_name": "a.markdown",
+      "input": [
+        {
+          "hex": "2a782a",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "markdown",
+        "output": {
+          "len": 3,
+          "sha256": "811dbefd7ac98c3aa6b5500cbb127e1af7f6d88033f29beaa3ad8737e654bd12",
+          "hex": "2a782a"
+        }
+      }
+    },
+    {
+      "name": "toml",
+      "file_name": "a.toml",
+      "input": [
+        {
+          "hex": "6b203d2031",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "toml",
+        "output": {
+          "len": 5,
+          "sha256": "57028f630a0b99c48182337758ad4f67d7f99396428ca4846be304afd9604bc5",
+          "hex": "6b203d2031"
+        }
+      }
+    },
+    {
+      "name": "yaml",
+      "file_name": "a.yaml",
+      "input": [
+        {
+          "hex": "6b3a2076",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "yaml",
+        "output": {
+          "len": 4,
+          "sha256": "5aa06bf80d7cdbef426d0a77e5162c2cd3b1439e4ea9542861a3fc2dc4537cfd",
+          "hex": "6b3a2076"
+        }
+      }
+    },
+    {
+      "name": "yml",
+      "file_name": "a.yml",
+      "input": [
+        {
+          "hex": "6b3a2076",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "yml",
+        "output": {
+          "len": 4,
+          "sha256": "5aa06bf80d7cdbef426d0a77e5162c2cd3b1439e4ea9542861a3fc2dc4537cfd",
+          "hex": "6b3a2076"
+        }
+      }
+    },
+    {
+      "name": "js",
+      "file_name": "a.js",
+      "input": [
+        {
+          "hex": "6c65742061203d2031",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "js",
+        "output": {
+          "len": 9,
+          "sha256": "2c07d877ba5b1548307d0bbc6f8ab5df93de4c6db3fbf7283c451809def87824",
+          "hex": "6c65742061203d2031"
+        }
+      }
+    },
+    {
+      "name": "mjs",
+      "file_name": "a.mjs",
+      "input": [
+        {
+          "hex": "6578706f7274207b7d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "mjs",
+        "output": {
+          "len": 9,
+          "sha256": "f4c5cf9bb78e85f15dc27180260637cf24b2a24bc39e0788783a3accc4dde614",
+          "hex": "6578706f7274207b7d"
+        }
+      }
+    },
+    {
+      "name": "ts",
+      "file_name": "a.ts",
+      "input": [
+        {
+          "hex": "6c657420613a206e756d626572",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "ts",
+        "output": {
+          "len": 13,
+          "sha256": "1fba02e210cf5bdd6e30c95f36a69ea29a3a3f28e4d12ef9b6a2060bde0138af",
+          "hex": "6c657420613a206e756d626572"
+        }
+      }
+    },
+    {
+      "name": "json5",
+      "file_name": "a.json5",
+      "input": [
+        {
+          "hex": "7b613a20317d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "json5",
+        "output": {
+          "len": 6,
+          "sha256": "5c41c5087643e28ad46363c644cc5e3ad8a0aec629d514f0a672482f74e1effb",
+          "hex": "7b613a20317d"
+        }
+      }
+    },
+    {
+      "name": "html",
+      "file_name": "a.html",
+      "input": [
+        {
+          "hex": "3c703e68693c2f703e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "html",
+        "output": {
+          "len": 9,
+          "sha256": "0a4735281db700223af63abc387c351f64ea6961a1ef955631df08d96169e772",
+          "hex": "3c703e68693c2f703e"
+        }
+      }
+    },
+    {
+      "name": "css",
+      "file_name": "a.css",
+      "input": [
+        {
+          "hex": "617b7d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "css",
+        "output": {
+          "len": 3,
+          "sha256": "5f546eb4606b5c2b7d2a449a5cc2bbb477ed5a246c7051ce871b12f2dbfc8419",
+          "hex": "617b7d"
+        }
+      }
+    },
+    {
+      "name": "xml",
+      "file_name": "a.xml",
+      "input": [
+        {
+          "hex": "3c612f3e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "xml",
+        "output": {
+          "len": 4,
+          "sha256": "29114363f749a0226b6988dda3ca2492a954117ab6b5f382706c20300dabc079",
+          "hex": "3c612f3e"
+        }
+      }
+    },
+    {
+      "name": "csv",
+      "file_name": "a.csv",
+      "input": [
+        {
+          "hex": "efbbbf612c620a312c32",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/csv",
+        "ext": "csv",
+        "output": {
+          "len": 7,
+          "sha256": "aeedab1ee7a1043753c9ab768594bc8420d7b85491d0be9421edc3813c237f4c",
+          "hex": "612c620a312c32"
+        }
+      }
+    },
+    {
+      "name": "json",
+      "file_name": "a.json",
+      "input": [
+        {
+          "hex": "7b2261223a225c7532303062227d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "application/json",
+        "ext": "json",
+        "output": {
+          "len": 14,
+          "sha256": "df9467170b5c3376b53453991a94a0e44c46703380ee22669474b5bc8ba57493",
+          "hex": "7b2261223a225c7532303062227d"
+        }
+      }
+    },
+    {
+      "name": "uppercase extension",
+      "file_name": "NOTE.TXT",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 1,
+          "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+          "hex": "78"
+        }
+      }
+    },
+    {
+      "name": "dotted name",
+      "file_name": "archive.tar.txt",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 1,
+          "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+          "hex": "78"
+        }
+      }
+    },
+    {
+      "name": "hidden file name",
+      "file_name": ".txt",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 1,
+          "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+          "hex": "78"
+        }
+      }
+    },
+    {
+      "name": "dotted directory",
+      "file_name": "a.b/c",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "trailing slash",
+      "file_name": "x.txt/",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "no extension",
+      "file_name": "README",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "empty name",
+      "file_name": "",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "unknown extension",
+      "file_name": "a.exe",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "dotless i lowers to ini",
+      "file_name": "a.İNİ",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "ini",
+        "output": {
+          "len": 1,
+          "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+          "hex": "78"
+        }
+      }
+    },
+    {
+      "name": "kelvin sign lowers to markdown",
+      "file_name": "a.MARKDOWN",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "markdown",
+        "output": {
+          "len": 1,
+          "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+          "hex": "78"
+        }
+      }
+    },
+    {
+      "name": "unicode lower outside ascii",
+      "file_name": "a.TХT",
+      "input": [
+        {
+          "hex": "78",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "text under binary extension",
+      "file_name": "a.png",
+      "input": [
+        {
+          "hex": "706c61696e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "text under svg extension",
+      "file_name": "a.svg",
+      "input": [
+        {
+          "hex": "706c61696e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "empty body",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "bom only body",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "efbbbf",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "control in sniff window",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "610162",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "nul in sniff window",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "610062",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "control after sniff window",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616101",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed"
+      }
+    },
+    {
+      "name": "nul after sniff window",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616100",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed"
+      }
+    },
+    {
+      "name": "invalid utf-8",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "61ff62",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "malformed"
+      }
+    },
+    {
+      "name": "cut multibyte at window edge",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "61616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161d0b6",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 513,
+          "sha256": "eda76b690bd0de0b55b66905778be7bbe2a4cfdde38ffddf1b09b0db2bace0d3",
+          "hex": "61616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161d0b6"
+        }
+      }
+    },
+    {
+      "name": "gif signature",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "4749463839612068656c6c6f",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "image/gif",
+        "ext": "gif"
+      }
+    },
+    {
+      "name": "pdf signature",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "255044462d312e372068656c6c6f",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "application/pdf",
+        "ext": "pdf"
+      }
+    },
+    {
+      "name": "svg root",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "3c7376673e3c2f7376673e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "image/svg+xml",
+        "ext": "svg"
+      }
+    },
+    {
+      "name": "svg after whitespace and bom",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "efbbbf200a3c7376672f3e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "image/svg+xml",
+        "ext": "svg"
+      }
+    },
+    {
+      "name": "svg inside html",
+      "file_name": "a.html",
+      "input": [
+        {
+          "hex": "3c703e3c7376673e3c2f7376673e3c2f703e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "image/svg+xml",
+        "ext": "svg"
+      }
+    },
+    {
+      "name": "svg past sniff window",
+      "file_name": "a.html",
+      "input": [
+        {
+          "hex": "3c703e61616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161613c7376672f3e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "html",
+        "output": {
+          "len": 521,
+          "sha256": "fca3b4737614aa50c302ca9f4baf4d89dfb8175584e6982c7aa29c2576bacba2",
+          "hex": "3c703e61616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161613c7376672f3e"
+        }
+      }
+    },
+    {
+      "name": "svg not at start",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "78203c7376672f3e",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 8,
+          "sha256": "43abb9029579038d228eb7e46db4229857887df57bb428a1fb033b2281a1af5c",
+          "hex": "78203c7376672f3e"
+        }
+      }
+    },
+    {
+      "name": "flac signature",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "664c61432074657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/flac",
+        "ext": "flac"
+      }
+    },
+    {
+      "name": "wave signature",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "524946467878787857415645666d7420",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/wav",
+        "ext": "wav"
+      }
+    },
+    {
+      "name": "webp signature",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "52494646787878785745425056503820",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "image/webp",
+        "ext": "webp"
+      }
+    },
+    {
+      "name": "ogg opus signature",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "4f676753204f70757348656164",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/ogg",
+        "ext": "ogg"
+      }
+    },
+    {
+      "name": "ogg without codec",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "4f6767532074657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 9,
+          "sha256": "4da07aff740d680195da6e54b2540ae4e22ee859a7f681c40fd922944e2c89ac",
+          "hex": "4f6767532074657874"
+        }
+      }
+    },
+    {
+      "name": "mp3 sync",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "fffb74657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/mpeg",
+        "ext": "mp3"
+      }
+    },
+    {
+      "name": "adts sync",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "fff174657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/aac",
+        "ext": "aac"
+      }
+    },
+    {
+      "name": "bare id3 magic",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "494433",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/mpeg",
+        "ext": "mp3"
+      }
+    },
+    {
+      "name": "id3 before text",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "49443304000000000000706c61696e2074657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/mpeg",
+        "ext": "mp3"
+      }
+    },
+    {
+      "name": "id3 before flac",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "49443304000000000000664c6143",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/flac",
+        "ext": "flac"
+      }
+    },
+    {
+      "name": "id3 footer before flac",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "4944330400100000000030313233343536373839664c6143",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/flac",
+        "ext": "flac"
+      }
+    },
+    {
+      "name": "nested id3",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "4944330400000000000049443304000000000000664c6143",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/mpeg",
+        "ext": "mp3"
+      }
+    },
+    {
+      "name": "text ftyp video",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "202020206674797069736f6d202020206d70343274657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "video/mp4",
+        "ext": "mp4"
+      }
+    },
+    {
+      "name": "text ftyp quicktime",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "2020202066747970717420202020202074657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "video/quicktime",
+        "ext": "mov"
+      }
+    },
+    {
+      "name": "text ftyp unknown brand",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "20202020667479707a7a7a7a2020202074657874",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "text ftyp audio",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "20202020667479704d344120202020204d344120",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "binary",
+        "mime": "audio/mp4",
+        "ext": "m4a"
+      }
+    },
+    {
+      "name": "text ftyp mixed image and video",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "2020202066747970686569632020202069736f6d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "text ftyp short",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "2020202066747970",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "unsupported_type"
+      }
+    },
+    {
+      "name": "ftyp beyond offset four",
+      "file_name": "a.txt",
+      "input": [
+        {
+          "hex": "20202020206674797069736f6d",
+          "repeat": 1
+        }
+      ],
+      "want": {
+        "result": "ok",
+        "mime": "text/plain",
+        "ext": "txt",
+        "output": {
+          "len": 13,
+          "sha256": "0211cfa434763069fb86048b6fe6d5fbe042234a629aa9aad9cf71b094e0a728",
+          "hex": "20202020206674797069736f6d"
+        }
+      }
+    }
+  ]
+}

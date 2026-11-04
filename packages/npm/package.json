@@ -1,0 +1,27 @@
+{
+  "name": "@meritt/unseen-wasm",
+  "version": "0.1.0",
+  "description": "Removes invisible Unicode carriers from text and normalizes what could mark it, in WebAssembly",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meritt/unseen.rs.git",
+    "directory": "packages/npm"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=26"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^12.15.0",
+      "onFail": "download"
+    }
+  },
+  "exports": {
+    ".": "./unseen.js",
+    "./unseen.wasm": "./unseen.wasm"
+  },
+  "files": ["unseen.js", "unseen.wasm"]
+}

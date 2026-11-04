@@ -1,0 +1,18 @@
+[package]
+name = "unseen-core"
+description = "Removes invisible Unicode carriers from text and normalizes what could mark it"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["unicode", "sanitize", "invisible", "homoglyph", "text"]
+categories = ["text-processing", "encoding"]
+include = ["src/**/*.rs", "Cargo.toml"]
+license-file = "../../LICENSE"
+
+[dev-dependencies]
+unseen-test-support.workspace = true
+
+[lints]
+workspace = true
